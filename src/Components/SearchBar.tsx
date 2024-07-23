@@ -26,7 +26,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
   return (
     <div className="px-[2.4rem] w-full md:px-[4rem] xl:px-[16.5rem]">
       <div className="flex mt-[-4rem] w-full">
-        <div className="relative flex-1 border-r-[1px]">
+        <div className="relative flex-1 md:border-r-[1px]">
           <div className="absolute top-[50%] translate-y-[-50%] left-[2.4rem] flex items-center gap-[2.4rem]">
             <img
               src="/images/desktop/icon-search.svg"
@@ -37,7 +37,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
           <input
             type="text"
             placeholder="Filter by title…"
-            className={`w-full text-p py-[3.2rem] pl-[2.4rem] rounded-l-[6px] outline-none ${
+            className={`w-full text-p py-[3.2rem] pl-[2.4rem] rounded-[6px] md:rounded-none md:rounded-l-[6px] outline-none ${
               isDark
                 ? "bg-darkBlue text-white"
                 : "bg-white text-darkBlue"
